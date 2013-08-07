@@ -206,25 +206,26 @@ img {
 
 /* line 107, ../scss/screen.scss */
 nav {
-  width: 100%; }
-  /* line 109, ../scss/screen.scss */
+  width: 100%;
+  font-family: "futura-pt", helvetica, sans-serif; }
+  /* line 110, ../scss/screen.scss */
   nav li {
     -webkit-transition: color, 500ms;
     -moz-transition: color, 500ms;
     -o-transition: color, 500ms;
     transition: color, 500ms;
     border-bottom: 2px solid #770000; }
-    /* line 112, ../scss/screen.scss */
+    /* line 113, ../scss/screen.scss */
     nav li:hover {
       border-bottom: 2px solid #eee; }
-  /* line 116, ../scss/screen.scss */
+  /* line 117, ../scss/screen.scss */
   nav a {
     border: none; }
-    /* line 118, ../scss/screen.scss */
+    /* line 119, ../scss/screen.scss */
     nav a:hover {
       border: none; }
 
-/* line 123, ../scss/screen.scss */
+/* line 124, ../scss/screen.scss */
 section {
   width: 100%;
   padding-bottom: 1.5em;
@@ -237,7 +238,7 @@ section {
   background-image: linear-gradient(top, #ffffff, #ededed);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ededed'); }
 
-/* line 136, ../scss/screen.scss */
+/* line 137, ../scss/screen.scss */
 article {
   font-size: 16px;
   line-height: 24px; }
@@ -251,49 +252,49 @@ article {
 
 /* =Specifics
 ================================================== */
-/* line 144, ../scss/screen.scss */
+/* line 145, ../scss/screen.scss */
 #logo {
   margin: 32px 0px 32px 0px; }
 
-/* line 152, ../scss/screen.scss */
+/* line 153, ../scss/screen.scss */
 #what ul li::before {
   content: '- '; }
 
 /* =Utility
 ================================================== */
-/* line 160, ../scss/screen.scss */
+/* line 161, ../scss/screen.scss */
 .remove-top {
   margin-top: 0 !important; }
 
-/* line 163, ../scss/screen.scss */
+/* line 164, ../scss/screen.scss */
 .remove-bottom {
   margin-bottom: 0 !important; }
 
-/* line 166, ../scss/screen.scss */
+/* line 167, ../scss/screen.scss */
 .half-bottom {
   margin-bottom: 10px !important; }
 
-/* line 169, ../scss/screen.scss */
+/* line 170, ../scss/screen.scss */
 .add-bottom {
   margin-bottom: 20px !important; }
 
-/* line 172, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 .text-left {
   text-align: left; }
 
-/* line 175, ../scss/screen.scss */
+/* line 176, ../scss/screen.scss */
 .text-right {
   text-align: right; }
 
-/* line 178, ../scss/screen.scss */
+/* line 179, ../scss/screen.scss */
 .text-center {
   text-align: center; }
 
-/* line 181, ../scss/screen.scss */
+/* line 182, ../scss/screen.scss */
 .sans {
   font-family: "futura-pt", helvetica, sans-serif; }
 
-/* line 184, ../scss/screen.scss */
+/* line 185, ../scss/screen.scss */
 .serif {
   font-family: "ff-meta-serif-web-pro", georgia, serif; }
 
@@ -303,17 +304,17 @@ article {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  /* line 199, ../scss/screen.scss */
+  /* line 200, ../scss/screen.scss */
   .ly-plus {
     font-size: 32px;
     line-height: 48px;
     margin: 0; }
 
-  /* line 204, ../scss/screen.scss */
+  /* line 205, ../scss/screen.scss */
   .hr-alpha {
     margin: 0 0 .75em 0; }
 
-  /* line 207, ../scss/screen.scss */
+  /* line 208, ../scss/screen.scss */
   .hr-omega {
     margin: .75em 0 2.4em 0; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -328,11 +329,11 @@ article {
     font-size: 16px;
     line-height: 3em; }
 
-  /* line 219, ../scss/screen.scss */
+  /* line 220, ../scss/screen.scss */
   #logo {
     margin: 16px 0px 0px 0px; }
 
-  /* line 222, ../scss/screen.scss */
+  /* line 223, ../scss/screen.scss */
   nav {
     font-size: 32px;
     line-height: 48px; } }
