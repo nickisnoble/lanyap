@@ -24,6 +24,9 @@ body{
 	font-family: $serif-font-stack;
 	color: $body-color;
 }
+p{
+	margin-bottom: 1.5em;
+}
 h1,h2,h3,h4,h5,h6{
 	font-family: $sans-font-stack;
 	font-weight: 700;
@@ -49,8 +52,26 @@ a{
 		border-bottom: 1px solid #000;
 	}
 }
+hr{
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	border-bottom: 1px solid $muted;
+}
+	.hr-alpha, .hr-omega{
+		margin: .3em 0 2.2em 0;
+	}
 .muted{
 	color: $muted;
+}
+.highlight{
+	color: $highlight;
+}
+.ly-plus{
+	color: $highlight;
+	text-align: center;
+	border: none;
+	margin-top:-.5em;
 }
 .page-header{
 	border-bottom: 2px solid $body-color;
@@ -77,12 +98,8 @@ a{
 		}
 	}
 }
-
 /* =Elements
 ================================================== */
-.fade{
-	opacity: 0;
-}
 img{
 	max-width: 100%;
 	height: auto;
@@ -179,6 +196,17 @@ article{
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+		.ly-plus{
+		font-size: 32px;
+		line-height: 48px;
+		margin:0;
+	}
+	.hr-alpha{
+		margin: 0 0 .75em 0;
+	}
+	.hr-omega{
+		margin: .75em 0 2.4em 0;
+	}
   
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -191,22 +219,8 @@ article{
 	#logo{
 		margin: 16px 0px 0px 0px;
 	}
-	.window{
-		width:100%;
-		height:100%;
-		position:absolute;
-		overflow: scroll;
+	nav{
+		font-size: 32px;
+		line-height: 48px;
 	}
-	#home{
-		nav{
-			text-align: center;
-			ul{
-				width: 100%;
-			}
-			li{
-				display: inline-block;
-				padding: 8px;
-			}
-		}
-	}  
 }
