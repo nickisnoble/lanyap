@@ -76,45 +76,46 @@ body {
 
 /* line 27, ../scss/screen.scss */
 p {
+  font-size: 16px;
   margin-bottom: 1.5em; }
 
-/* line 30, ../scss/screen.scss */
+/* line 31, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "futura-pt", helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
   border-bottom: 1px solid #333333; }
 
-/* line 36, ../scss/screen.scss */
+/* line 37, ../scss/screen.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* line 37, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.75em 0; }
 
-/* line 38, ../scss/screen.scss */
+/* line 39, ../scss/screen.scss */
 h3 {
   font-size: 1.17em;
   margin: 0.83em 0; }
 
-/* line 39, ../scss/screen.scss */
+/* line 40, ../scss/screen.scss */
 h5 {
   font-size: .83em;
   margin: 1.5em 0; }
 
-/* line 40, ../scss/screen.scss */
+/* line 41, ../scss/screen.scss */
 h6 {
   font-size: .75em;
   margin: 1.67em 0; }
 
-/* line 41, ../scss/screen.scss */
+/* line 42, ../scss/screen.scss */
 em {
   font-style: italic; }
 
-/* line 44, ../scss/screen.scss */
+/* line 45, ../scss/screen.scss */
 a {
   color: #333333;
   text-decoration: none;
@@ -140,93 +141,93 @@ a {
   /* line 27, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: #770000; }
-  /* line 51, ../scss/screen.scss */
+  /* line 52, ../scss/screen.scss */
   a:hover {
     border-bottom: 1px solid #000; }
 
-/* line 55, ../scss/screen.scss */
+/* line 56, ../scss/screen.scss */
 hr {
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: 1px solid #cccccc; }
 
-/* line 61, ../scss/screen.scss */
+/* line 62, ../scss/screen.scss */
 .hr-alpha, .hr-omega {
   margin: .3em 0 2.2em 0; }
 
-/* line 64, ../scss/screen.scss */
+/* line 65, ../scss/screen.scss */
 .muted {
   color: #cccccc; }
 
-/* line 67, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 .highlight {
   color: #770000; }
 
-/* line 70, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 .ly-plus {
   color: #770000;
   text-align: center;
   border: none;
   margin-top: -.5em; }
 
-/* line 76, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 .page-header {
   border-bottom: 2px solid #333333; }
 
-/* line 79, ../scss/screen.scss */
+/* line 80, ../scss/screen.scss */
 .sub {
   border: none;
   margin: 1.5em 0; }
 
-/* line 83, ../scss/screen.scss */
+/* line 84, ../scss/screen.scss */
 .to-top {
   text-align: right;
   float: right;
   font-size: small;
   font-family: "ff-meta-serif-web-pro", georgia, serif;
   color: #cccccc; }
-  /* line 89, ../scss/screen.scss */
+  /* line 90, ../scss/screen.scss */
   .to-top a {
     color: #cccccc;
     border: none;
     padding: 8px;
     border-radius: 2px; }
-    /* line 95, ../scss/screen.scss */
+    /* line 96, ../scss/screen.scss */
     .to-top a:hover {
       color: #fff;
       background: #cccccc; }
 
 /* =Elements
 ================================================== */
-/* line 103, ../scss/screen.scss */
+/* line 104, ../scss/screen.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 107, ../scss/screen.scss */
+/* line 108, ../scss/screen.scss */
 nav {
   width: 100%;
   font-family: "futura-pt", helvetica, sans-serif;
   font-weight: 700; }
-  /* line 111, ../scss/screen.scss */
+  /* line 112, ../scss/screen.scss */
   nav li {
     -webkit-transition: color, 500ms;
     -moz-transition: color, 500ms;
     -o-transition: color, 500ms;
     transition: color, 500ms;
     border-bottom: 2px solid #770000; }
-    /* line 114, ../scss/screen.scss */
+    /* line 115, ../scss/screen.scss */
     nav li:hover {
       border-bottom: 2px solid #eee; }
-  /* line 118, ../scss/screen.scss */
+  /* line 119, ../scss/screen.scss */
   nav a {
     border: none; }
-    /* line 120, ../scss/screen.scss */
+    /* line 121, ../scss/screen.scss */
     nav a:hover {
       border: none; }
 
-/* line 125, ../scss/screen.scss */
+/* line 126, ../scss/screen.scss */
 section {
   width: 100%;
   padding-bottom: 1.5em;
@@ -239,7 +240,7 @@ section {
   background-image: linear-gradient(top, #ffffff, #ededed);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ededed'); }
 
-/* line 137, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 article {
   font-size: 16px;
   line-height: 24px; }
@@ -253,49 +254,49 @@ article {
 
 /* =Specifics
 ================================================== */
-/* line 145, ../scss/screen.scss */
+/* line 146, ../scss/screen.scss */
 #logo {
   margin: 32px 0px 32px 0px; }
 
-/* line 151, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 #what ul li::before {
   content: '- '; }
 
 /* =Utility
 ================================================== */
-/* line 159, ../scss/screen.scss */
+/* line 160, ../scss/screen.scss */
 .remove-top {
   margin-top: 0 !important; }
 
-/* line 162, ../scss/screen.scss */
+/* line 163, ../scss/screen.scss */
 .remove-bottom {
   margin-bottom: 0 !important; }
 
-/* line 165, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 .half-bottom {
   margin-bottom: 10px !important; }
 
-/* line 168, ../scss/screen.scss */
+/* line 169, ../scss/screen.scss */
 .add-bottom {
   margin-bottom: 20px !important; }
 
-/* line 171, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 .text-left {
   text-align: left; }
 
-/* line 174, ../scss/screen.scss */
+/* line 175, ../scss/screen.scss */
 .text-right {
   text-align: right; }
 
-/* line 177, ../scss/screen.scss */
+/* line 178, ../scss/screen.scss */
 .text-center {
   text-align: center; }
 
-/* line 180, ../scss/screen.scss */
+/* line 181, ../scss/screen.scss */
 .sans {
   font-family: "futura-pt", helvetica, sans-serif; }
 
-/* line 183, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 .serif {
   font-family: "ff-meta-serif-web-pro", georgia, serif; }
 
@@ -305,17 +306,17 @@ article {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  /* line 198, ../scss/screen.scss */
+  /* line 199, ../scss/screen.scss */
   .ly-plus {
     font-size: 32px;
     line-height: 48px;
     margin: 0; }
 
-  /* line 203, ../scss/screen.scss */
+  /* line 204, ../scss/screen.scss */
   .hr-alpha {
     margin: 0 0 .75em 0; }
 
-  /* line 206, ../scss/screen.scss */
+  /* line 207, ../scss/screen.scss */
   .hr-omega {
     margin: .75em 0 2.4em 0; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -330,11 +331,11 @@ article {
     font-size: 16px;
     line-height: 3em; }
 
-  /* line 218, ../scss/screen.scss */
+  /* line 219, ../scss/screen.scss */
   #logo {
     margin: 16px 0px 0px 0px; }
 
-  /* line 221, ../scss/screen.scss */
+  /* line 222, ../scss/screen.scss */
   nav {
     font-size: 32px;
     line-height: 48px; } }
