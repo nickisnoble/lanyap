@@ -1,0 +1,212 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass";
+@import "compass/reset";
+
+// Settings
+$base-font-size: 32px;
+$base-line-height: 48px;
+@include establish-baseline($base-font-size);
+
+$sans-font-stack:'futura-pt', helvetica, sans-serif;
+$serif-font-stack:'ff-meta-serif-web-pro', georgia, serif;
+
+	// Colors
+	$highlight:#700;
+	$body-color:#333;
+	$muted:#ccc;
+
+	/* =Type
+================================================== */
+body{
+	font-family: $serif-font-stack;
+	color: $body-color;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: $sans-font-stack;
+	font-weight: 700;
+	line-height: 1.5em;
+	border-bottom: 1px solid $body-color;
+}
+h1{ font-size: 2em; margin: .67em 0 }
+h2{ font-size: 1.5em; margin: .75em 0 }
+h3{ font-size: 1.17em; margin: .83em 0 }
+h5{ font-size: .83em; margin: 1.5em 0 }
+h6{ font-size: .75em; margin: 1.67em 0 }
+em{
+	font-style: italic;
+}
+a{
+	@include link-colors($body-color, #000, $highlight, $body-color, $highlight);
+	text-decoration: none;
+	border-bottom: 1px solid $highlight;
+	padding-bottom: -10px;
+	@include transition( color, 500ms);
+	@include transition( border, 500ms);
+	&:hover{
+		border-bottom: 1px solid #000;
+	}
+}
+.muted{
+	color: $muted;
+}
+.page-header{
+	border-bottom: 2px solid $body-color;
+}
+.sub{
+	border: none;
+	margin: 1.5em 0;
+}
+.to-top{
+	text-align: right;
+	float: right;
+	font-size: small;
+	font-family: $serif-font-stack;
+	color: $muted;
+	a{
+		color: $muted;
+		border: none;
+		padding: 8px;
+		border-radius: 2px;
+
+		&:hover{
+			color: #fff;
+			background: $muted;
+		}
+	}
+}
+
+/* =Elements
+================================================== */
+.fade{
+	opacity: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+nav{
+	width: 100%;
+	li{
+		@include transition( color, 500ms);
+		border-bottom: 2px solid $highlight;
+		&:hover{
+			border-bottom: 2px solid #eee;
+		}
+	}
+	a{
+		border: none;
+		&:hover{
+			border: none;
+		}
+	}
+}
+section{
+	width:100%;
+	// height:100%;
+	padding-bottom: 1.5em;
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(237, 237, 237)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(237, 237, 237));
+	background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(237, 237, 237));
+	background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(237, 237, 237));
+	background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(237, 237, 237));
+	background-image: linear-gradient(top, rgb(255, 255, 255), rgb(237, 237, 237));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ededed');
+}
+article{
+	font-size: 16px;
+	line-height: 24px;
+	@include establish-baseline(16px);
+}
+
+/* =Specifics
+================================================== */
+#logo{
+	margin: 32px 0px 32px 0px;
+}
+#home{
+}
+#what{
+	ul{
+		li{
+			&::before{
+				content: '- ';
+			}
+		}
+	}
+}
+/* =Utility
+================================================== */
+.remove-top {
+	margin-top: 0 !important;
+}
+.remove-bottom {
+	margin-bottom: 0 !important;
+}
+.half-bottom {
+	margin-bottom: 10px !important;
+}
+.add-bottom {
+	margin-bottom: 20px !important;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.sans{
+	font-family: $sans-font-stack;
+}
+.serif{
+	font-family: $serif-font-stack;
+}
+/* =Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	@include establish-baseline(16px);
+	#logo{
+		margin: 16px 0px 0px 0px;
+	}
+	.window{
+		width:100%;
+		height:100%;
+		position:absolute;
+		overflow: scroll;
+	}
+	#home{
+		nav{
+			text-align: center;
+			ul{
+				width: 100%;
+			}
+			li{
+				display: inline-block;
+				padding: 8px;
+			}
+		}
+	}  
+}
