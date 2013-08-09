@@ -146,88 +146,107 @@ a {
     border-bottom: 1px solid #000; }
 
 /* line 56, ../scss/screen.scss */
+small {
+  font-size: 80%; }
+
+/* line 59, ../scss/screen.scss */
 hr {
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: 1px solid #cccccc; }
 
-/* line 62, ../scss/screen.scss */
+/* line 65, ../scss/screen.scss */
 .hr-alpha, .hr-omega {
   margin: .3em 0 2.2em 0; }
 
-/* line 65, ../scss/screen.scss */
+/* line 69, ../scss/screen.scss */
 .muted {
   color: #cccccc; }
 
-/* line 68, ../scss/screen.scss */
+/* line 72, ../scss/screen.scss */
+.sub {
+  border: none;
+  margin: 1.5em 0; }
+
+/* line 76, ../scss/screen.scss */
 .highlight {
   color: #770000; }
 
-/* line 71, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 .ly-plus {
   color: #770000;
   text-align: center;
   border: none;
   margin-top: -.5em; }
 
-/* line 77, ../scss/screen.scss */
+/* line 85, ../scss/screen.scss */
 .page-header {
   border-bottom: 2px solid #333333; }
 
-/* line 80, ../scss/screen.scss */
-.sub {
-  border: none;
-  margin: 1.5em 0; }
-
-/* line 84, ../scss/screen.scss */
+/* line 88, ../scss/screen.scss */
 .to-top {
   text-align: right;
   float: right;
   font-size: small;
   font-family: "ff-meta-serif-web-pro", georgia, serif;
   color: #cccccc; }
-  /* line 90, ../scss/screen.scss */
+  /* line 94, ../scss/screen.scss */
   .to-top a {
     color: #cccccc;
     border: none;
     padding: 8px;
     border-radius: 2px; }
-    /* line 96, ../scss/screen.scss */
+    /* line 100, ../scss/screen.scss */
     .to-top a:hover {
       color: #fff;
       background: #cccccc; }
 
 /* =Elements
 ================================================== */
-/* line 104, ../scss/screen.scss */
+/* line 108, ../scss/screen.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 108, ../scss/screen.scss */
+/* line 112, ../scss/screen.scss */
 nav {
   width: 100%;
   font-family: "futura-pt", helvetica, sans-serif;
   font-weight: 700; }
-  /* line 112, ../scss/screen.scss */
+  /* line 116, ../scss/screen.scss */
   nav li {
     -webkit-transition: color, 500ms;
     -moz-transition: color, 500ms;
     -o-transition: color, 500ms;
     transition: color, 500ms;
     border-bottom: 2px solid #770000; }
-    /* line 115, ../scss/screen.scss */
+    /* line 119, ../scss/screen.scss */
     nav li:hover {
       border-bottom: 2px solid #eee; }
-  /* line 119, ../scss/screen.scss */
+  /* line 123, ../scss/screen.scss */
   nav a {
     border: none; }
-    /* line 121, ../scss/screen.scss */
+    /* line 125, ../scss/screen.scss */
     nav a:hover {
       border: none; }
 
-/* line 126, ../scss/screen.scss */
+/* line 130, ../scss/screen.scss */
+.social {
+  text-align: center;
+  margin: 32px 0;
+  font-family: "ff-meta-serif-web-pro", georgia, serif; }
+  /* line 134, ../scss/screen.scss */
+  .social li {
+    border: none; }
+    /* line 136, ../scss/screen.scss */
+    .social li:hover {
+      border: none; }
+  /* line 140, ../scss/screen.scss */
+  .social a {
+    color: #cccccc; }
+
+/* line 144, ../scss/screen.scss */
 section {
   width: 100%;
   padding-bottom: 1.5em;
@@ -240,7 +259,7 @@ section {
   background-image: linear-gradient(top, #ffffff, #ededed);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ededed'); }
 
-/* line 138, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 article {
   font-size: 16px;
   line-height: 24px; }
@@ -252,51 +271,55 @@ article {
     font-size: 16px;
     line-height: 3em; }
 
+/* line 161, ../scss/screen.scss */
+figure {
+  margin-bottom: 24px; }
+
 /* =Specifics
 ================================================== */
-/* line 146, ../scss/screen.scss */
+/* line 167, ../scss/screen.scss */
 #logo {
   margin: 32px 0px 32px 0px; }
 
-/* line 152, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 #what ul li::before {
   content: '- '; }
 
 /* =Utility
 ================================================== */
-/* line 160, ../scss/screen.scss */
+/* line 181, ../scss/screen.scss */
 .remove-top {
   margin-top: 0 !important; }
 
-/* line 163, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 .remove-bottom {
   margin-bottom: 0 !important; }
 
-/* line 166, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 .half-bottom {
   margin-bottom: 10px !important; }
 
-/* line 169, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 .add-bottom {
   margin-bottom: 20px !important; }
 
-/* line 172, ../scss/screen.scss */
+/* line 193, ../scss/screen.scss */
 .text-left {
   text-align: left; }
 
-/* line 175, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 .text-right {
   text-align: right; }
 
-/* line 178, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 .text-center {
   text-align: center; }
 
-/* line 181, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 .sans {
   font-family: "futura-pt", helvetica, sans-serif; }
 
-/* line 184, ../scss/screen.scss */
+/* line 205, ../scss/screen.scss */
 .serif {
   font-family: "ff-meta-serif-web-pro", georgia, serif; }
 
@@ -306,17 +329,17 @@ article {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  /* line 199, ../scss/screen.scss */
+  /* line 220, ../scss/screen.scss */
   .ly-plus {
     font-size: 32px;
     line-height: 48px;
     margin: 0; }
 
-  /* line 204, ../scss/screen.scss */
+  /* line 225, ../scss/screen.scss */
   .hr-alpha {
     margin: 0 0 .75em 0; }
 
-  /* line 207, ../scss/screen.scss */
+  /* line 228, ../scss/screen.scss */
   .hr-omega {
     margin: .75em 0 2.4em 0; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -331,11 +354,11 @@ article {
     font-size: 16px;
     line-height: 3em; }
 
-  /* line 219, ../scss/screen.scss */
+  /* line 240, ../scss/screen.scss */
   #logo {
     margin: 16px 0px 0px 0px; }
 
-  /* line 222, ../scss/screen.scss */
+  /* line 243, ../scss/screen.scss */
   nav {
     font-size: 32px;
     line-height: 48px; } }

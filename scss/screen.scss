@@ -53,6 +53,9 @@ a{
 		border-bottom: 1px solid #000;
 	}
 }
+small{
+	font-size: 80%;
+}
 hr{
 	border-top:0;
 	border-left:0;
@@ -62,8 +65,13 @@ hr{
 	.hr-alpha, .hr-omega{
 		margin: .3em 0 2.2em 0;
 	}
+
 .muted{
 	color: $muted;
+}
+.sub{
+	border: none;
+	margin: 1.5em 0;
 }
 .highlight{
 	color: $highlight;
@@ -76,10 +84,6 @@ hr{
 }
 .page-header{
 	border-bottom: 2px solid $body-color;
-}
-.sub{
-	border: none;
-	margin: 1.5em 0;
 }
 .to-top{
 	text-align: right;
@@ -123,6 +127,20 @@ nav{
 		}
 	}
 }
+.social{
+	text-align: center;
+	margin: 32px 0; 
+	font-family: $serif-font-stack;
+	li{
+		border: none;
+		&:hover{
+			border:none;
+		}
+	}
+	a{
+		color:$muted;
+	}
+}
 section{
 	width:100%;
 	padding-bottom: 1.5em;
@@ -139,6 +157,9 @@ article{
 	font-size: 16px;
 	line-height: 24px;
 	@include establish-baseline(16px);
+}
+figure{
+	margin-bottom: 24px;
 }
 
 /* =Specifics

@@ -25,6 +25,7 @@
   ================================================== -->
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/component.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,7 +50,9 @@
 
 				<img id="logo" src="imgs/cleanyap.png" alt="Lanyap">
 
-				<h2 class="serif sub remove-top"><em>Handmade experiences, for the web &amp; the real world alike.</em></h2>
+				<h2 class="serif sub remove-top whisper">
+					<em>Handmade experiences,<br/>for the web &amp; the real world alike.</em>
+				</h2>
 				
 				<div class="seven columns alpha">
 					<hr class="hr-alpha">
@@ -60,9 +63,7 @@
 				<div class="seven columns omega">
 					<hr class="hr-omega">
 				</div>
-
 			</div>
-				
 			<nav>
 				<ul>
 					<li class="four columns"><a href="#what">What</a></li>
@@ -71,10 +72,8 @@
 					<li class="four columns"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-
 		</div>
 	</section>
-
 	<section id="what">
 		<div class="container">
 			<div class="sixteen columns">
@@ -164,7 +163,7 @@
 					</figure>
 					
 					<figure class="four columns">
-						<img src="imgs/aaron.jpg" alt="A picture of Aaron Matys"/>
+						<img src="imgs/aaronalt.jpg" alt="A picture of Aaron Matys"/>
 						<figcaption>
 							<h3>Aaron Matys</h3>
 							<h4 class="muted sub remove-top">Strategic Director</h4>
@@ -187,14 +186,30 @@
 
 	<section id="latest">
 		<div class="container">
-			<div class="sixteen columns">
-				<h2 class="page-header">Latest
+			<div class="sixteen columns video">
+				<h2 class="page-header">Latest<small class="muted"> - <em>"Together"</em></small>
 					<span class="to-top">
 						<a href="#"><em>to the top</em>&uarr;</a>
 					</span>
 				</h2>
 				<article>
-					
+
+					<figure>
+						 <iframe src="http://player.vimeo.com/video/71851910?color=cf0000" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</figure>
+
+					<div class="one-third column alpha">
+						<h3>Client:</h3>
+						<p>Youth I.N.C., a non profit dedicated to helping youths in New York City</p>
+					</div>
+					<div class="one-third column">
+						<h3>Project Type:</h3>
+						<p>Anitmated Short</p>
+					</div>
+					<div class="one-third column omega">
+						<h3>Brief:</h3>
+						<p>Convey the goals an achievements of the company in a quick and engaging format.</p>
+					</div>
 				</article>
 			</div>
 		</div>
@@ -209,7 +224,22 @@
 					</span>
 				</h2>
 				<article>
-					
+
+					<form id="nl-form" class="nl-form" method="post" name="nl-form" action="php/handler.php">
+					    Hey Lanyap, <br/> I'm 
+					    <input type="text" name="name" value="name" placeholder="name"/><span style="display:none"></span> from <input type="text" name="company" value="company" placeholder="company"/><span style="display:none"></span>
+					    and I'm interested in
+					    <select name="activity">
+					        <option value="1" selected>getting in touch with</option>
+					        <option value="2">getting a quote from</option>
+					        <option value="3">grabbing a beer with</option>
+					    </select>
+					    you guys. You can get back to me at <input type="text" name="email" value="name@company.com" placeholder="email"/>.
+					    <div class="nl-submit-wrap">
+					        <button class="nl-submit" type="submit">Let us know &rarr;</button>
+					    </div>
+					</form>
+
 				</article>
 			</div>
 		</div>
@@ -218,6 +248,7 @@
 	<!-- JS
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
 
@@ -230,14 +261,37 @@
 		        }
 		    })
 
+		    $(".video").fitVids();
+
 		    // Animate Scroll
 		    $('.to-top').click(function(event){
 		    	event.preventDefault();
 		    	$('html, body').animate({scrollTop: 0}, 300);
 		    })
 
+		    //make inputs scale to value
+		    $('input[type="text"]').each(function(e) {
+			    if (e.which !== 0 && e.charCode !== 0) { // only characters
+			        var c = String.fromCharCode(e.keyCode|e.charCode);
+			        $span = $(this).siblings('span').first();
+			        $span.text($(this).val() + c) ; // the hidden span takes the value of the input
+			        $inputSize = $span.width() ; 
+			        $(this).css("width", $inputSize) ; // apply width of the span to the input
+			     }
+			}) ;
+			$('input[type="text"]').keypress(function(e) {
+			    if (e.which !== 0 && e.charCode !== 0) { // only characters
+			        var c = String.fromCharCode(e.keyCode|e.charCode);
+			        $span = $(this).siblings('span').first();
+			        $span.text($(this).val() + c) ; // the hidden span takes the value of the input
+			        $inputSize = $span.width() ; 
+			        $(this).css("width", $inputSize) ; // apply width of the span to the input
+			     }
+			}) ;
+
 		});
 	</script>
+	
 <!-- End Document
 ================================================== -->
 </body>
