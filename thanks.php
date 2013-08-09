@@ -23,9 +23,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/screen.css">
-	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/screen.css">
+	<link rel="stylesheet" href="../css/component.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -56,10 +56,10 @@
 			</div>
 			<nav>
 				<ul>
-					<li class="four columns"><a href="index.html">Home</a></li>
-					<li class="four columns"><a href="index.html#what">What</a></li>
-					<li class="four columns"><a href="index.html#who">Who</a></li>
-					<li class="four columns"><a href="index.html#latest">Latest</a></li>
+					<li class="four columns"><a href="../index.html">Home</a></li>
+					<li class="four columns"><a href="../index.html#what">What</a></li>
+					<li class="four columns"><a href="../index.html#who">Who</a></li>
+					<li class="four columns"><a href="../index.html#latest">Latest</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -1,6 +1,6 @@
 <?php 
- 
- 
+ini_set('display_errors', 1); error_reporting(E_ALL);
+
 $errors = '';
 $myemail = 'nick@lanyapcreative.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
@@ -28,21 +28,23 @@ if(empty($errors)){
 
 	"Email: $email_address\n Message \n $activiy";
 
+/*
 	$headers = "From: $myemail\n";
 
 	$headers .= "Reply-To: $email_address";
+*/
 
-	$result = mail($to,$email_subject,$email_body,$headers);
+	$result = mail($to,$email_subject,$email_body);
     
     if($result){
-		echo "Thank you $name, Sent successfully. We'll get back to you shortly";
+		echo " ";
     }else{
     	echo "Failed sending email";
     }
 
 	//redirect to the 'thank you' page
 
-	header('Location: thanks.html');
+	include '../thanks.php';
  
 }else{
 	echo $errors;
