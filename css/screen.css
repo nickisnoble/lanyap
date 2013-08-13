@@ -82,7 +82,7 @@ body {
 /* line 31, ../scss/screen.scss */
 p {
   font-size: 16px;
-  margin-bottom: 1.5em; }
+  margin: .83em 0; }
 
 /* line 35, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -124,16 +124,11 @@ em {
 a {
   color: #333333;
   text-decoration: none;
-  border-bottom: 1px solid #c0203a;
-  padding-bottom: -10px;
-  -webkit-transition: color, 500ms;
-  -moz-transition: color, 500ms;
-  -o-transition: color, 500ms;
-  transition: color, 500ms;
-  -webkit-transition: border, 500ms;
-  -moz-transition: border, 500ms;
-  -o-transition: border, 500ms;
-  transition: border, 500ms; }
+  border-bottom: 1px dashed #cccccc;
+  -webkit-transition: all, 500ms;
+  -moz-transition: all, 500ms;
+  -o-transition: all, 500ms;
+  transition: all, 500ms; }
   /* line 18, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: #333333; }
@@ -146,95 +141,96 @@ a {
   /* line 27, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: #c0203a; }
-  /* line 56, ../scss/screen.scss */
+  /* line 54, ../scss/screen.scss */
   a:hover {
     border-bottom: 1px solid #000; }
 
-/* line 60, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 small {
   font-size: 80%; }
 
-/* line 63, ../scss/screen.scss */
+/* line 61, ../scss/screen.scss */
 hr {
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: 1px solid #cccccc; }
 
-/* line 69, ../scss/screen.scss */
+/* line 67, ../scss/screen.scss */
 .hr-alpha, .hr-omega {
   margin: .3em 0 2.2em 0; }
 
-/* line 73, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 .muted {
   color: #cccccc; }
 
-/* line 76, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 .sub {
   border: none;
-  margin: 1.5em 0; }
+  margin: 0.83em 0; }
 
-/* line 80, ../scss/screen.scss */
+/* line 78, ../scss/screen.scss */
 .highlight {
   color: #c0203a; }
 
-/* line 83, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 .ly-plus {
   color: #c0203a;
   text-align: center;
   border: none;
-  margin-top: -.5em; }
+  margin-top: -0.5em; }
 
-/* line 89, ../scss/screen.scss */
+/* line 87, ../scss/screen.scss */
 .page-header {
   border-bottom: 2px solid #333333; }
 
-/* line 92, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 .to-top {
   text-align: right;
   float: right;
   font-size: small;
   font-family: "ff-meta-serif-web-pro", georgia, serif;
   color: #cccccc; }
-  /* line 98, ../scss/screen.scss */
+  /* line 96, ../scss/screen.scss */
   .to-top a {
     color: #cccccc;
     border: none;
     padding: 8px;
     border-radius: 2px; }
-    /* line 104, ../scss/screen.scss */
+    /* line 102, ../scss/screen.scss */
     .to-top a:hover {
       color: #fff;
       background: #cccccc; }
 
 /* =Elements
 ================================================== */
-/* line 112, ../scss/screen.scss */
+/* line 110, ../scss/screen.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 116, ../scss/screen.scss */
+/* line 114, ../scss/screen.scss */
 nav {
   width: 100%;
   font-family: "futura-pt", helvetica, sans-serif;
   font-weight: 700; }
-  /* line 120, ../scss/screen.scss */
+  /* line 118, ../scss/screen.scss */
   nav li {
-    -webkit-transition: color, 500ms;
-    -moz-transition: color, 500ms;
-    -o-transition: color, 500ms;
-    transition: color, 500ms;
+    -webkit-transition: all, 500ms;
+    -moz-transition: all, 500ms;
+    -o-transition: all, 500ms;
+    transition: all, 500ms;
     border-bottom: 2px solid #c0203a; }
-    /* line 123, ../scss/screen.scss */
+    /* line 121, ../scss/screen.scss */
     nav li:hover {
-      border-bottom: 2px solid #eee; }
-  /* line 127, ../scss/screen.scss */
+      border-bottom: 2px solid #333333; }
+      /* line 123, ../scss/screen.scss */
+      nav li:hover a {
+        border: none;
+        color: #c0203a; }
+  /* line 129, ../scss/screen.scss */
   nav a {
     border: none; }
-    /* line 129, ../scss/screen.scss */
-    nav a:hover {
-      border: none; }
 
 /* line 134, ../scss/screen.scss */
 .social {

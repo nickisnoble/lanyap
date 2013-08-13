@@ -51,7 +51,7 @@
 				<img id="logo" src="imgs/cleanyap.png" alt="Lanyap">
 
 				<h2 class="serif sub remove-top whisper">
-					<em>Handmade experiences,<br/>for the web &amp; the real world alike.</em>
+					<em>Tailored digital experiences, with a little something extra.</em>
 				</h2>
 				
 				<div class="seven columns alpha">
@@ -148,7 +148,7 @@
 						<img src="imgs/jason.jpg" alt="A picture of Jason Seidman"/>
 						<figcaption>
 							<h3>Jason Seidman</h3>
-							<h4 class="muted sub remove-top">CEO &amp; Co-founder</h4>
+							<h4 class="muted sub">CEO &amp; Co-founder</h4>
 							<p>A natural socialite, Jason knows how to get people talking. Events, fundraisers, and social campaigns are his bread and butter. Getting a brand unprecedented coverage is as easy as a handshake.</p>
 						</figcaption>
 					</figure>
@@ -157,7 +157,7 @@
 						<img src="imgs/nick.jpg" alt="A picture of Nick Noble"/>
 						<figcaption>
 							<h3>Nick Noble</h3>
-							<h4 class="muted sub remove-top">Creative Director</h4>
+							<h4 class="muted sub">Creative Director</h4>
 							<p>Nick likes to say he has been advertising since he could hold a pen. His objective approach to brands allows him to get into any audience's shoes, while his sharp wit and quick thinking make him a pleasure to work with. He's created work for HBO, Bombay Saphire, CBS, and FOX among others.</p>
 						</figcaption>
 					</figure>
@@ -166,8 +166,8 @@
 						<img src="imgs/aaronalt2.jpg" alt="A picture of Aaron Matys"/>
 						<figcaption>
 							<h3>Aaron Matys</h3>
-							<h4 class="muted sub remove-top">Strategic Director</h4>
-							<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<h4 class="muted sub">Strategic Director</h4>
+							<p></p>
 						</figcaption>
 					</figure>
 
@@ -175,8 +175,8 @@
 						<img src="imgs/joe.jpg" alt="A picture of Joe Corbett"/>
 						<figcaption>
 							<h3>Joe Corbett</h3>
-							<h4 class="muted sub remove-top">Co-founder</h4>
-							<p>I am the Co-Founder of Lanyap Creative, and I focus on creating perfect digital/physical execution for my clients and collaborators. I have been deeply immersed in the web since the age of 10, and started my first tech business at age 16. I'm very passionate about supporting my fellow entrepreneurs, especially those that call New Orleans home. I'm a nerd at heart and love talking about all things tech.</p>
+							<h4 class="muted sub">Co-founder</h4>
+							<p>Joe co-founded Lanyap Creative in order to create the level of perfect digital &amp; physical execution he has focused on for almost 20 years. He is extremely passionate about supporting fellow entrepreneurs, especially those that call New Orleans home. Ford, GE, Intel, Disney, The U.S. Army, and Coca-Cola are all brands on a long list of clients Joe has worked with.</p>
 						</figcaption>
 					</figure>
 				</article>
@@ -224,22 +224,15 @@
 					</span>
 				</h2>
 				<article>
-
-					<form id="nl-form" class="nl-form" method="post" name="nl-form" action="php/handler.php">
-					    Hey Lanyap, <br/> I'm 
-					    <input type="text" name="name" value="name" placeholder="name"/><span style="display:none"></span> from <input type="text" name="company" value="company" placeholder="company"/><span style="display:none"></span>
-					    and I'm interested in
-					    <select name="activity">
-					        <option value="1" selected>getting in touch with</option>
-					        <option value="2">getting a quote from</option>
-					        <option value="3">grabbing a beer with</option>
-					    </select>
-					    you guys. You can get back to me at <input type="text" name="email" value="name@company.com" placeholder="email"/>.
-					    <div class="nl-submit-wrap">
-					        <button class="nl-submit" type="submit">Let us know &rarr;</button>
-					    </div>
-					</form>
-
+					<p>Feel free to get in touch for any reason, wether it's to talk about a project, ask a question, or just to say hello.</p>
+					<div class="eight columns alpha">
+						<h3>Email</h3>
+						<a href="mailto:hello@lanyapcreative.com">hello@lanyapcreative.com</a>
+					</div>
+					<div class="eight columns omega">
+						<h3>Telephone</h3>
+						<a href="tel:0000000000">(000)-000-0000</a>
+					</div>	
 				</article>
 			</div>
 		</div>
@@ -268,26 +261,6 @@
 		    	event.preventDefault();
 		    	$('html, body').animate({scrollTop: 0}, 300);
 		    })
-
-		    //make inputs scale to value
-		    $('input[type="text"]').each(function(e) {
-			    if (e.which !== 0 && e.charCode !== 0) { // only characters
-			        var c = String.fromCharCode(e.keyCode|e.charCode);
-			        $span = $(this).siblings('span').first();
-			        $span.text($(this).val() + c) ; // the hidden span takes the value of the input
-			        $inputSize = $span.width() ; 
-			        $(this).css("width", $inputSize) ; // apply width of the span to the input
-			     }
-			}) ;
-			$('input[type="text"]').keypress(function(e) {
-			    if (e.which !== 0 && e.charCode !== 0) { // only characters
-			        var c = String.fromCharCode(e.keyCode|e.charCode);
-			        $span = $(this).siblings('span').first();
-			        $span.text($(this).val() + c) ; // the hidden span takes the value of the input
-			        $inputSize = $span.width() ; 
-			        $(this).css("width", $inputSize) ; // apply width of the span to the input
-			     }
-			}) ;
 
 		});
 	</script>

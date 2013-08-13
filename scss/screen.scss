@@ -30,7 +30,7 @@ body{
 }
 p{	
 	font-size: 16px;
-	margin-bottom: 1.5em;
+	margin: .83em 0;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: $sans-font-stack;
@@ -49,10 +49,8 @@ em{
 a{
 	@include link-colors($body-color, #000, $highlight, $body-color, $highlight);
 	text-decoration: none;
-	border-bottom: 1px solid $highlight;
-	padding-bottom: -10px;
-	@include transition( color, 500ms);
-	@include transition( border, 500ms);
+	border-bottom: 1px dashed $muted;
+	@include transition( all, 500ms);
 	&:hover{
 		border-bottom: 1px solid #000;
 	}
@@ -75,7 +73,7 @@ hr{
 }
 .sub{
 	border: none;
-	margin: 1.5em 0;
+	margin: 0.83em 0;
 }
 .highlight{
 	color: $highlight;
@@ -84,7 +82,7 @@ hr{
 	color: $highlight;
 	text-align: center;
 	border: none;
-	margin-top:-.5em;
+	margin-top:-0.5em;
 }
 .page-header{
 	border-bottom: 2px solid $body-color;
@@ -118,17 +116,19 @@ nav{
 	font-family: $sans-font-stack;
 	font-weight: 700;
 	li{
-		@include transition( color, 500ms);
+		@include transition(all, 500ms);
 		border-bottom: 2px solid $highlight;
 		&:hover{
-			border-bottom: 2px solid #eee;
+			border-bottom: 2px solid $body-color;
+			a{
+				border: none;
+				color: $highlight;
+			}
 		}
 	}
 	a{
 		border: none;
-		&:hover{
-			border: none;
-		}
+
 	}
 }
 .social{
