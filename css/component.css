@@ -1,8 +1,8 @@
 /* general style for the form */
 .nl-form {
 	width: 100%;
-	margin: 32px auto 0 auto;
-	font-size: 3em;
+	margin: 32px 0;
+	font-size: 2em;
 	line-height: 1.5;
 	
 }
@@ -51,16 +51,16 @@
 .nl-form select  {
 	line-height: inherit;
 	display: inline-block;
-	color: #700;
+	color: #C0203A;
 	cursor: pointer;
-	border-bottom: 1px dashed #700;
+	border-bottom: 1px dashed #C0203A;
 }
 
 /* drop-down list / text element */
 .nl-field ul {
 	position: absolute;
 	visibility: hidden;
-	background: #700;
+	background: #C0203A;
 	left: -0.5em;
 	top: 50%;
 	font-size: 80%;
@@ -96,7 +96,7 @@
 }
 
 .nl-dd ul li.nl-dd-checked {
-	color: #700;
+	color: #C0203A;
 }
 
 .no-touch .nl-dd ul li:hover {
@@ -104,7 +104,7 @@
 }
 
 .no-touch .nl-dd ul li:hover:active {
-	color: #700;
+	color: #C0203A;
 }
 
 /* icons for some elements */
@@ -197,11 +197,12 @@ input:focus::-ms-input-placeholder {
 	cursor: pointer;
 	position: relative;
 	color: #333;
-	padding: 0 1em 0 0;
-	font-size: 80%;
+	margin: 1em 0;
+	font-size: .8em;
 	font-weight: bold;
 	font-family: "futura-pt", helvetica, sans-serif;
-	border-bottom: 2px solid #700;
+	border-bottom: 2px solid #C0203A;
+	text-align: left;
 }
 .nl-form .nl-submit:hover,
 .no-touch .nl-form .nl-submit:hover,
@@ -211,12 +212,16 @@ input:focus::-ms-input-placeholder {
 
 @media screen and (max-width: 45em) {
 	.nl-form {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 
 @media screen and (max-width: 25em) {
 	.nl-form {
-		font-size: 1em;
+		font-size: 1.2em;
+	}
+	.nl-form .nl-submit{
+		font-size: 2em;
+		width:100%;
 	}
 }

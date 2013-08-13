@@ -14,7 +14,7 @@ $sans-font-stack:'futura-pt', helvetica, sans-serif;
 $serif-font-stack:'ff-meta-serif-web-pro', georgia, serif;
 
 	// Colors
-	$highlight:#700;
+	$highlight:#C0203A;
 	$body-color:#333;
 	$muted:#ccc;
 
@@ -23,6 +23,10 @@ $serif-font-stack:'ff-meta-serif-web-pro', georgia, serif;
 body{
 	font-family: $serif-font-stack;
 	color: $body-color;
+}
+::selection{
+	color: #fff;
+	background: $highlight;
 }
 p{	
 	font-size: 16px;
