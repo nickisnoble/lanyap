@@ -205,59 +205,61 @@ hr {
 
 /* =Elements
 ================================================== */
-/* line 112, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 116, ../scss/screen.scss */
+/* line 119, ../scss/screen.scss */
+li:hover a {
+  padding-left: 16px; }
+/* line 123, ../scss/screen.scss */
+li a {
+  border: none;
+  display: block; }
+  /* line 126, ../scss/screen.scss */
+  li a:hover {
+    border: none; }
+
+/* line 131, ../scss/screen.scss */
 nav {
   width: 100%;
   font-family: "futura-pt", helvetica, sans-serif;
   font-weight: 700; }
-  /* line 120, ../scss/screen.scss */
+  /* line 135, ../scss/screen.scss */
   nav li {
     -webkit-transition: all, 500ms;
     -moz-transition: all, 500ms;
     -o-transition: all, 500ms;
     transition: all, 500ms;
     border-bottom: 2px solid #c0203a; }
-    /* line 123, ../scss/screen.scss */
+    /* line 138, ../scss/screen.scss */
     nav li:hover {
       border-bottom: 2px solid #333333; }
-      /* line 125, ../scss/screen.scss */
+      /* line 140, ../scss/screen.scss */
       nav li:hover a {
-        border: none;
         color: #c0203a; }
-  /* line 131, ../scss/screen.scss */
-  nav a {
-    border: none; }
 
-/* line 136, ../scss/screen.scss */
+/* line 146, ../scss/screen.scss */
 .social-list {
   font-family: "SSSocialRegular"; }
 
-/* line 139, ../scss/screen.scss */
+/* line 149, ../scss/screen.scss */
 .social-links {
-  font-family: "SSSocialRegular"; }
-  /* line 141, ../scss/screen.scss */
+  font-family: "SSSocialRegular";
+  text-align: center; }
+  /* line 153, ../scss/screen.scss */
   .social-links li {
-    border-bottom: 1px solid #eee; }
-    /* line 143, ../scss/screen.scss */
-    .social-links li:hover {
-      border-bottom: 2px solid #000; }
-      /* line 145, ../scss/screen.scss */
-      .social-links li:hover a {
-        color: #333333; }
-  /* line 150, ../scss/screen.scss */
+    display: inline-block;
+    margin: .83em 0; }
+    /* line 159, ../scss/screen.scss */
+    .social-links li:hover a {
+      color: #333333; }
+  /* line 164, ../scss/screen.scss */
   .social-links a {
-    color: #cccccc;
-    border: none; }
-    /* line 153, ../scss/screen.scss */
-    .social-links a:hover {
-      border: none; }
+    color: #cccccc; }
 
-/* line 158, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 section {
   width: 100%;
   background-color: #ffffff;
@@ -269,7 +271,7 @@ section {
   background-image: linear-gradient(top, #ffffff, #ededed);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ededed'); }
 
-/* line 169, ../scss/screen.scss */
+/* line 179, ../scss/screen.scss */
 article {
   font-size: 16px;
   line-height: 24px; }
@@ -281,61 +283,61 @@ article {
     font-size: 16px;
     line-height: 3em; }
 
-/* line 174, ../scss/screen.scss */
+/* line 184, ../scss/screen.scss */
 figure {
   margin-bottom: 24px; }
 
 /* =Specifics
 ================================================== */
-/* line 180, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 #logo {
   margin: 32px 0px 32px 0px; }
 
-/* line 186, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 #what ul li::before {
   content: '- '; }
 
 /* =Utility
 ================================================== */
-/* line 194, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 .remove-top {
   margin-top: 0 !important; }
 
-/* line 197, ../scss/screen.scss */
+/* line 207, ../scss/screen.scss */
 .remove-bottom {
   margin-bottom: 0 !important; }
 
-/* line 200, ../scss/screen.scss */
+/* line 210, ../scss/screen.scss */
 .half-bottom {
   margin-bottom: 10px !important; }
 
-/* line 203, ../scss/screen.scss */
+/* line 213, ../scss/screen.scss */
 .add-bottom {
   margin-bottom: 20px !important; }
 
-/* line 206, ../scss/screen.scss */
+/* line 216, ../scss/screen.scss */
 .text-left {
   text-align: left; }
 
-/* line 209, ../scss/screen.scss */
+/* line 219, ../scss/screen.scss */
 .text-right {
   text-align: right; }
 
-/* line 212, ../scss/screen.scss */
+/* line 222, ../scss/screen.scss */
 .text-center {
   text-align: center; }
 
-/* line 215, ../scss/screen.scss */
+/* line 225, ../scss/screen.scss */
 .sans {
   font-family: "futura-pt", helvetica, sans-serif; }
 
-/* line 218, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 .serif {
   font-family: "ff-meta-serif-web-pro", georgia, serif; }
 
 /* =Shynav
 ================================================== */
-/* line 224, ../scss/screen.scss */
+/* line 234, ../scss/screen.scss */
 header {
   width: 100%;
   height: 100%;
@@ -372,31 +374,30 @@ header {
   left: 0px;
   right: 0px;
   line-height: 50px; }
-  /* line 262, ../scss/screen.scss */
+  /* line 272, ../scss/screen.scss */
   header.hidden {
     -webkit-transform: translate3d(0, -50px, 0);
     -moz-transform: translate3d(0, -50px, 0);
     -o-transform: translate3d(0, -50px, 0);
     -ms-transform: translate3d(0, -50px, 0);
     transform: translate3d(0, -50px, 0); }
-  /* line 270, ../scss/screen.scss */
+  /* line 280, ../scss/screen.scss */
   header.fixed {
     background: white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     position: fixed;
     opacity: 1; }
-    /* line 276, ../scss/screen.scss */
+    /* line 286, ../scss/screen.scss */
     header.fixed li:hover {
       background: #c0203a; }
-      /* line 278, ../scss/screen.scss */
+      /* line 288, ../scss/screen.scss */
       header.fixed li:hover a {
         color: #fff;
-        padding-left: 16px;
         opacity: 1; }
-    /* line 284, ../scss/screen.scss */
+    /* line 293, ../scss/screen.scss */
     header.fixed li a {
       opacity: 1; }
-  /* line 289, ../scss/screen.scss */
+  /* line 298, ../scss/screen.scss */
   header:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
@@ -406,16 +407,12 @@ header {
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-  /* line 301, ../scss/screen.scss */
+  /* line 310, ../scss/screen.scss */
   header li:hover a {
     opacity: 0; }
-  /* line 306, ../scss/screen.scss */
+  /* line 315, ../scss/screen.scss */
   header a {
-    border: none;
     opacity: 0; }
-    /* line 309, ../scss/screen.scss */
-    header a:hover {
-      border: none; }
 
 /* =Queries
 ================================================== */
@@ -423,44 +420,36 @@ header {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  /* line 327, ../scss/screen.scss */
+  /* line 332, ../scss/screen.scss */
   .ly-plus {
     font-size: 32px;
     line-height: 48px;
     margin: 0; }
 
-  /* line 332, ../scss/screen.scss */
+  /* line 337, ../scss/screen.scss */
   .hr-alpha {
     margin: 0 0 .75em 0; }
 
-  /* line 335, ../scss/screen.scss */
+  /* line 340, ../scss/screen.scss */
   .hr-omega {
     margin: .75em 0 2.4em 0; }
 
-  /* line 338, ../scss/screen.scss */
+  /* line 343, ../scss/screen.scss */
   header {
     display: none; }
 
-  /* line 341, ../scss/screen.scss */
+  /* line 346, ../scss/screen.scss */
   section {
     padding: 1.5em 0; }
 
-  /* line 344, ../scss/screen.scss */
+  /* line 349, ../scss/screen.scss */
   .social-links {
-    text-align: center; }
-    /* line 346, ../scss/screen.scss */
-    .social-links .four {
-      display: inline;
-      max-width: 25%; }
+    font-size: 150%; }
 
-  /* line 351, ../scss/screen.scss */
+  /* line 352, ../scss/screen.scss */
   .typer {
     font-size: 100%; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 357, ../scss/screen.scss */
-  .social-links {
-    font-size: 60%; } }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* line 61, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
@@ -483,4 +472,8 @@ header {
 
   /* line 370, ../scss/screen.scss */
   .typer {
-    font-size: 120%; } }
+    font-size: 140%; }
+
+  /* line 373, ../scss/screen.scss */
+  .social-links {
+    font-size: 250%; } }
