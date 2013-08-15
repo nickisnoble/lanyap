@@ -32,7 +32,6 @@ body{
 p{	
 	font-size: 16px;
 	margin: .83em 0;
-	// padding-bottom: .83em;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: $sans-font-stack;
@@ -52,7 +51,7 @@ a{
 	@include link-colors($body-color, #000, $highlight, $body-color, $highlight);
 	text-decoration: none;
 	@include transition( all, 500ms);
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px dotted $highlight;
 	&:hover{
 		border-bottom: 1px solid #000;
 	}
@@ -106,6 +105,11 @@ hr{
 			background: $muted;
 		}
 	}
+}
+.copyright{
+	text-align: center;
+	margin: 0;
+	line-height: 24px;
 }
 
 /* =Elements
@@ -185,9 +189,8 @@ article{
 	font-size: 16px;
 	line-height: 24px;
 	@include establish-baseline(16px);
-}
-figure{
-	margin-bottom: 24px;
+	overflow: hidden;
+	margin-bottom: 2em;
 }
 
 /* =Specifics
@@ -324,14 +327,6 @@ header {
 
 /* =Queries
 ================================================== */
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
-  
-}
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 		.ly-plus{
@@ -363,10 +358,6 @@ header {
 	.typer{
 		font-size: 100%;
 	}
-}
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
