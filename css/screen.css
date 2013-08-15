@@ -209,8 +209,10 @@ nav {
   .social a {
     color: #cccccc; }
 
-.social-list li:hover a {
-  padding-left: 8px; }
+.social-list {
+  font-size: 170%; }
+  .social-list li {
+    margin-bottom: 1.5em; }
 
 .social-links {
   text-align: center; }
@@ -362,16 +364,8 @@ header {
   header {
     display: none; }
 
-  section {
-    padding: 1.5em 0; }
-
   .social-links {
     font-size: 150%; }
-
-  .social-list {
-    font-size: 200%; }
-    .social-list li {
-      margin-bottom: 1.5em; }
 
   .typer {
     font-size: 100%; } }

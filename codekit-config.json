@@ -109,6 +109,17 @@
       "initialSize" : 203397,
       "fileType" : 4096
     },
+    "\/imgs\/aaronalt.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/imgs\/aaronalt.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/imgs\/aaronalt.jpg",
+      "initialSize" : 508439,
+      "fileType" : 4096
+    },
     "\/imgs\/jason.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -131,17 +142,6 @@
       "initialSize" : 18847,
       "fileType" : 8192
     },
-    "\/js\/jquery.typer-ck.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.typer-ck.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery.typer-ck-ck.js",
-      "fileType" : 64
-    },
     "\/js\/scripts-ck.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -153,16 +153,16 @@
       "outputAbbreviatedPath" : "\/js\/scripts-ck-ck.js",
       "fileType" : 64
     },
-    "\/imgs\/aaronalt.jpg" : {
+    "\/js\/jquery.typer-ck.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/imgs\/aaronalt.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/imgs\/aaronalt.jpg",
-      "initialSize" : 508439,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/js\/jquery.typer-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.typer-ck-ck.js",
+      "fileType" : 64
     },
     "\/js\/ss-social.js" : {
       "ignoreWasSetByUser" : 0,
@@ -175,6 +175,15 @@
       "outputAbbreviatedPath" : "\/js\/ss-social-ck.js",
       "fileType" : 64
     },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
+    },
     "\/imgs\/apple-touch-icon-114x114.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -185,17 +194,6 @@
       "outputAbbreviatedPath" : "\/imgs\/apple-touch-icon-114x114.png",
       "initialSize" : 10118,
       "fileType" : 8192
-    },
-    "\/imgs\/joe.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/imgs\/joe.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/imgs\/joe.jpg",
-      "initialSize" : 1055620,
-      "fileType" : 4096
     },
     "\/css\/print.css" : {
       "ignoreWasSetByUser" : 0,
@@ -217,35 +215,34 @@
       "outputAbbreviatedPath" : "\/js\/shynav-ck.js",
       "fileType" : 64
     },
-    "\/config.rb" : {
+    "\/imgs\/joe.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
+      "inputAbbreviatedPath" : "\/imgs\/joe.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/imgs\/joe.jpg",
+      "initialSize" : 1055620,
+      "fileType" : 4096
     },
-    "\/scss\/ie.scss" : {
+    "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/ie.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/ie.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/css\/ss-social-regular.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ss-social-regular.css",
+      "inputAbbreviatedPath" : "\/css\/ie.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/imgs\/apple-touch-icon-72x72.png" : {
       "ignoreWasSetByUser" : 0,
@@ -269,6 +266,18 @@
       "initialSize" : 1253235,
       "fileType" : 4096
     },
+    "\/scss\/ie.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/ie.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/ie.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/js\/jquery.fitvids.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -291,23 +300,14 @@
       "initialSize" : 427143,
       "fileType" : 4096
     },
-    "\/css\/ie.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/index.html" : {
+    "\/css\/ss-social-regular.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
+      "inputAbbreviatedPath" : "\/css\/ss-social-regular.css",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "fileType" : 16
     },
     "\/scss\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
