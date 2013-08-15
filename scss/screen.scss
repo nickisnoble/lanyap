@@ -143,19 +143,12 @@ nav{
 		}
 	}
 }
-.social-list{
+.social{
 	font-family: $social-icons;
-}
-.social-links{
-	font-family: $social-icons;
-	// font-size: 80%;
-	text-align: center;
 	li{
-		// border-bottom: 1px solid #eee;
 		display: inline-block;
 		margin: .83em 0;
 		&:hover{
-			// border-bottom: 2px solid #000;
 			a{
 				color: $body-color;
 			}
@@ -164,6 +157,18 @@ nav{
 	a{
 		color:$muted;
 	}
+}
+.social-list{
+	li{
+		&:hover{
+			a{
+				padding-left: 8px;
+			}
+		}
+	}
+}
+.social-links{
+	text-align: center;
 }
 section{
 	width:100%;
@@ -348,6 +353,12 @@ header {
 	}
 	.social-links{
 		font-size: 150%;
+	}
+	.social-list{
+		font-size: 200%;
+		li{
+			margin-bottom:1.5em;
+		}
 	}
 	.typer{
 		font-size: 100%;

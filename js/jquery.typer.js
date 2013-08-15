@@ -70,7 +70,7 @@ String.prototype.rightChars = function(n){
       oldRight = $e.data('oldRight');
 
     // if (!isNumber(position)) {
-      // position = $e.data('leftStop');
+    //   position = $e.data('leftStop');
     // }
 
     if (!text || text.length === 0) {
