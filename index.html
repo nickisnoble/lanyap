@@ -257,30 +257,8 @@
 	<script src="js/shynav-ck.js"></script>
 	<script src="js/ss-social.js"></script>
 	<script src="js/jquery.typer.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
+	<script src="js/scripts-ck.js"></script>
 
-		    //make sections *at least* as tall as the viewport
-		    var winheight = $(window).height();
-		    $('section').each(function(){
-		        var $this = $(this);
-		        if ($this.height() <= winheight) {
-		            $this.css('min-height', winheight);
-		        }
-		    })
-
-		    $(".video").fitVids();
-
-		    // Animate Scroll
-		    $('.to-top').click(function(event){
-		    	event.preventDefault();
-		    	$('html, body').animate({scrollTop: 0}, 300);
-		    })
-
-		    $('[data-typer-targets]').typer();
-		});
-	</script>
-	
 <!-- End Document
 ================================================== -->
 </body>
